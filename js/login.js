@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
     const username = email.split("@")[0];
     msj.innerHTML = `Bienvenid@<br> al Club, <br> ${username}`;
     loginContent.style.display = "none";
-    logoChange.src = "./css-styles/icons/msn-logo.jpg";
+    logoChange.src = "css-styles/icons/msn-login.gif";
   }, 2000);
 });
 
