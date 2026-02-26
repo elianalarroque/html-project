@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Algol Regular";
+  src: url("./Algol\ Regular.ttf");
+}
+@font-face {
+  font-family: "Good Timing";
+  src: url("./good\ timing\ bd.otf");
+}
+* {
+  cursor: url("./icons/cursor.png") 16 16,
+    auto;
+}
+body {
+  background-image: url("./backgrounds/fondo-places.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Algol Regular";
+}
+
+h1,
+h2 {
+  font-family: "Good Timing";
+  font-size: 2em;
+  color: rgba(20, 20, 20, 0.774);
+  text-shadow: 10px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  display: flex;
+  text-align: center;
+}
+
+header {
+  display: block;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 20px #ff54c577;
+  border-bottom: 2px solid #ffbdf0;
+  background-color: #ad2e8fe3;
+  text-align: center;
+}
+
+a {
+  cursor: url("./icons/pointer.png") 16 16,
+    pointer;
+  color: pink;
+  font-family: "Algol Regular";
+}
+
+nav a:hover {
+  background: #ffbdf0;
+  color: #b40069;
+  box-shadow: 0 0 10px #fff;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-left: 160px;
+  padding: 20px;
+}
+
+article {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255, 0.7);
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.imagen-wiki {
+  width: 80%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.imagen-wiki img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+aside {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  background-color: rgba(104, 12, 146, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  width: 15%;
+}
+
+aside h4 {
+  text-align: center;
+}
+
+aside nav a {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: white;
+}

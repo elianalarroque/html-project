@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Algol Regular";
+  src: url("./Algol\ Regular.ttf");
+}
+@font-face {
+  font-family: "Good Timing";
+  src: url("./good\ timing\ bd.otf");
+}
+* {
+  cursor: url("./icons/cursor.png") 16 16,
+    auto;
+}
+body {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  align-items: center;
+  background-image: url("./backgrounds/playlist.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Algol Regular";
+}
+
+a {
+  cursor: url("./icons/pointer.png") 16 16,
+    pointer;
+    color: pink;
+}
+a:hover {
+  background: #ffbdf0;
+  color: #b40069;
+  box-shadow: 0 0 10px #fff;
+}
+
+h1 {
+  font-family: "Good Timing";
+  position: relative;
+  padding: 10%;
+}
+
+#description {
+  padding: 5%;
+  border-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 1, 0.445);
+}
+
+#playlist-container {
+  width: 25%;
+  max-width: 100%;
+  position: relative;
+}
+#ipod-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#playlist {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 62%;
+  height: 45%;
+  border-radius: 12px;
+  border: none;
+}

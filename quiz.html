@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css-styles/quiz.css" rel="stylesheet" />
+    <script src="./js/quiz.js" defer></script>
+    <link
+      rel="icon"
+      href="./css-styles/icons/favicon.png"
+      type="image/x-icon"
+    />
+    <title>qUiZzZ aNd mOrE</title>
+  </head>
+  <body>
+    <header>
+      <h1>¿Qué recuerdas de los 2000?</h1>
+      <nav>
+        <a href="index.html">Volver al inicio</a>
+        <a href="playlist.html">Playlist</a>
+        <a href="places-to-visit.html">Visit</a>
+        <a href="contact.html">Contact us</a>
+      </nav>
+    </header>
+    <main>
+      <section >
+        <article class="active">
+          <h2>¿Qué mirabamos en los 2000s?</h2>
+          <p>
+            ¿Alguna vez te preguntaste qué era popular en ese entonces? <br />
+            Han pasado más de 20 años, refresca un poco tu memoria!
+          </p>
+
+          <select id="yearSelector">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+          </select>
+          <button id="searchBtn" class="btn">Buscar</button>
+          <div id="moviesContainer"></div>
+        </article>
+      </section>
+      <section class="active">
+        <h2>¡Pon a prueba tu memoria!</h2>
+        <p>
+          Cada pregunta reproduce un sonido clásico de los 2000<br />
+          Tendrás opciones para elegir de dónde es ese sonido.<br />
+          Elige la opción correcta, suma puntos y descubre qué tan experto eres!
+        </p>
+        <article id="start" class="active">
+        <h2>💿 ¡El Quiz de Sonidos 2000! 💾</h2>
+        <button id="start-btn" class="btn">¡EMPEZAR!</button>
+      </article>
+      <article id="quiz">
+        <h2 id="q-num"></h2>
+        <audio id="audio" controls></audio>
+
+        <div id="options"></div>
+      </article>
+      <article id="results">
+        <h2>🏆 RESULTADOS 🏆</h2>
+        <p id="score"></p>
+        <div id="result-gif"></div>
+        <p id="feedback"></p>
+        <button id="restart-btn" class="btn">Volver a jugar</button>
+      </article>
+      </section>
+      
+      <br />
+    </main>
+
+    <footer>
+      <p>
+        <em>
+          © 2025 Back to 2000s, Eliana Larroque, Albañiles Digitales IV Ed.</em
+        >
+      </p>
+      <p>
+        Powered by
+        <a href="https://www.themoviedb.org/" target="_blank">TMDb API</a> 🎬 &
+        <a href="https://giphy.com/" target="_blank">Giphy API</a> ✨
+      </p>
+    </footer>
+  </body>
+</html>

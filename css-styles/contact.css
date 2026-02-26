@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Algol Regular";
+  src: url("./Algol\ Regular.ttf");
+}
+@font-face {
+  font-family: "Good Timing";
+  src: url("./good\ timing\ bd.otf");
+}
+
+* {
+  cursor: url("./icons/cursor.png") 16 16,
+    auto;
+}
+body {
+  background-image: url("./backgrounds/contact-page.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Algol Regular";
+  font-size: 1.4em;
+}
+
+header {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Good Timing";
+}
+h1 {
+  font-size: 3em;
+}
+
+nav a {
+  cursor: url("./icons/pointer.png") 16 16,
+    pointer;
+  color: rgb(21, 74, 189);
+}
+
+a:hover {
+  background: #2d4bd1;
+  color: #ffffff;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: url("./icons/pointer.png") 16 16,
+    pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+#formulario {
+  margin: 0;
+  padding: 2%;
+  width: 30%;
+  border-radius: 5%;
+  background-color: rgba(240, 248, 255, 0.692);
+}

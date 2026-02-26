@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Algol Regular";
+  src: url("./Algol\ Regular.ttf");
+}
+@font-face {
+  font-family: "Good Timing";
+  src: url("./good\ timing\ bd.otf");
+}
+* {
+  cursor: url("./icons/cursor.png") 16 16, auto;
+}
+body {
+  font-family: "Algol Regular";
+  background-image: url("./backgrounds/fondo-quiz.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  font-family: "Good Timing";
+  padding: 20px;
+  box-shadow: 0 0 20px #ff54c577;
+  border-bottom: 2px solid #ffbdf0;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px white;
+}
+h2 {
+  font-family: "Good Timing";
+}
+
+a {
+  cursor: url("./icons/pointer.png") 16 16, pointer;
+  color: #ffeaff;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: #ffbdf0;
+  color: #b40069;
+  box-shadow: 0 0 10px #fff;
+}
+
+article {
+  display: none;
+  padding: 40px 20px;
+}
+
+article.active {
+  display: block;
+}
+
+.btn {
+  font-family: "Algol Regular";
+  background: #faa1e2;
+  color: #b40069;
+  border: 2px solid #ffbdf0;
+  border-radius: 20px;
+  padding: 12px 25px;
+  margin: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: url("./icons/pointer.png"), 16 16, pointer;
+  box-shadow: 0 0 10px #ffffff80, inset 0 0 10px #ffbdf0;
+  transition: 0.15s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #fff, inset 0 0 15px #ff9edb;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+#options button {
+  display: block;
+  width: min(50%);
+  margin: 12px auto;
+}
+
+#results h2 {
+  font-family: "Good Timing";
+  font-size: 2rem;
+  color: #ffeaff;
+  text-shadow: 0 0 10px #ff6dd7;
+}
+
+#feedback {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  text-shadow: 0 0 6px #ffffffaa;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin: 1%;
+  padding: 0;
+  align-items: stretch;
+}
+
+section {
+  height: 560px; 
+  overflow-y: auto; /*scroll solo cuando el contenido es mas grande q el height*/ 
+  flex: 1;
+  margin: 0 1%; 
+  max-width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  padding: 2%;
+  border-radius: 1.5%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px #ff6dd7bb;
+}
+
+#yearSelector {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #ff6dd7;
+  cursor: url("./icons/pointer.png"), 16 16, pointer;
+  font-family: "Algol Regular";
+}
+
+#yearSelector:hover {
+  background-color: #ff6dd7bb;
+}
+
+#yearSelector:focus {
+  outline: none;
+  border-color: #ff6dd7;
+}
+
+#yearSelector:active {
+  background: #ff9edb;
+}

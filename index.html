@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css-styles/style.css" rel="stylesheet" />
+    <link rel="icon" href="./css-styles/icons/favicon.png" type="image/x-icon">
+     <script src="./js/login.js" defer></script>
+    
+
+    <title>Back to 2000s</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        welcome to <br />
+        BACK TO <br />
+        2000s
+      </h1>
+
+      <nav id="menu">
+        <a href="index.html">
+          <img src="./css-styles/icons/inicio.png" />
+          Inicio</a
+        >
+        <a id="login-btn-nav">
+          <img src="./css-styles/icons/login.png" alt="ingresar-icon" /> Login</a
+        >
+        <a href="playlist.html">
+          <img src="./css-styles/icons/musica.png" alt="musica-icon" />
+          Playlist</a
+        >
+        <a href="quiz.html">
+          <img src="./css-styles/icons/quiz.png" alt="quiz" />
+          Quiz</a
+        >
+        <a href="places-to-visit.html">
+          <img src="./css-styles/icons/places.png" alt="mundo" />
+          Visit</a
+        >
+        <a href="contact.html">
+          <img src="./css-styles/icons/email.png" alt="contacto" />
+          Contact us
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div id="welcome-msj">
+        <img src="./css-styles/icons/window.png" alt="marco" class="ventana" />
+        <p>
+          Bienvenido a Back to 2000s,<br />
+          un espacio creado para que <br />
+          viajes al pasado.<br />
+          Aquí el MSN aún suena, <br />
+          los CDs giran <br />
+          y los emojis son pixeles.
+        </p>
+      </div>
+    </main>
+    <section>
+      <div id="login-modal" class="login-modal">
+        <br />
+        <h1 id="msj">
+          Listo para<br />
+          un viaje<br />
+          al pasado?
+        </h1>
+        <article id="hide-after-login" class="msn-window">
+          <div class="msn-content">
+            <div class="msn-header">Back to 2000s Club</div>
+            <img
+              src="./css-styles/icons/msn-logo.jpg"
+              alt="MSN logo"
+              class="msn-logo"
+              id="image-logo"
+            />
+            <h2>Iniciar sesión</h2>
+            <div class="modal-window">
+              <form id="form-login" method="POST">
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail address"
+                  required
+                /><br />
+                Contraseña
+                <input type="password" placeholder="password" required /><br />
+                <button type="submit" id="login-btn">Iniciar sesión</button
+                ><br />
+              </form>
+            </div>
+          </div>
+        </article>
+        <button id="close-btn" class="close-modal">X</button>
+        <br />
+      </div>
+    </section>
+    <footer>
+      <p>
+        <em>
+          © 2025 Back to 2000s, Eliana Larroque, Albañiles Digitales IV Ed.</em
+        >
+      </p>
+    </footer>
+  </body>
+</html>
