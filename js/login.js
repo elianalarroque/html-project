@@ -17,7 +17,7 @@ loginIcon.addEventListener("click", (e) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  logoChange.src = "/css-styles/icons/msn-login.gif";
+  logoChange.src = "css-styles/icons/msn-login.gif";
 
   setTimeout(() => {
     const formData = new FormData(form);
